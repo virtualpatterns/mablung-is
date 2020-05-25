@@ -63,7 +63,6 @@
     "@babel/core": "^7.9.6",
     "@babel/plugin-syntax-import-meta": "^7.8.3",
     "@babel/preset-env": "^7.9.6",
-    "@pwn/is": "^1.0.2",
     "@virtualpatterns/mablung-babel-plugin-replace": "file:../mablung-babel-plugin-replace",
     "@virtualpatterns/mablung-source-map-support": "file:../mablung-source-map-support",
     "ava": "^3.8.2",
@@ -76,5 +75,7 @@
     "npm-run-all": "^4.1.5",
     "shx": "^0.3.2"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@pwn/is": "^1.0.2"
+  }
 }
