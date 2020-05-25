@@ -1,7 +1,11 @@
-export function Bundle(utility) {
+import Is from '@pwn/is'
+
+Is.use((utility) => {
  
   utility.addPredicate('functionOrAsyncFunction', (value) => {
     return typeof value === 'function'
   })
  
-}
+})
+
+export { Is }
