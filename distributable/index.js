@@ -1,14 +1,12 @@
 import Is from '@pwn/is';
 
-function Bundle(utility) {
+Is.use(utility => {
 
   utility.addPredicate('functionOrAsyncFunction', value => {
     return typeof value === 'function';
   });
 
-}
+});
 
-Is.use(Bundle);
-
-export { Bundle, Is };
+export { Is };
 //# sourceMappingURL=index.js.map
