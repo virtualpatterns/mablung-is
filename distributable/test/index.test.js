@@ -1,13 +1,18 @@
 import Is from '@pwn/is';
 import Test from 'ava';
 
-Test('Bundle', async test => {
-  test.truthy((await import('../index.js')).Bundle);
-});
+import { Bundle, Is as NewIs } from '../index.js';
 
-Test('Is.functionOrAsyncFunction(value)', async test => {
+// Test('Bundle, Is', async (test) => {
 
-  let { Bundle } = await import('../index.js');
+//   let module = await import('../index.js')
+
+//   test.truthy(module.Bundle)
+//   test.truthy(module.Is)
+
+// })
+
+Test.skip('Is.functionOrAsyncFunction(value) using Is.use(fn)', async test => {
 
   Is.use(Bundle);
 
@@ -16,6 +21,16 @@ Test('Is.functionOrAsyncFunction(value)', async test => {
 
   test.false(Is.functionOrAsyncFunction('() => {}'));
   test.false(Is.functionOrAsyncFunction('async () => {}'));
+
+});
+
+Test('NewIs.functionOrAsyncFunction(value) using NewIs', async test => {
+
+  test.true(NewIs.functionOrAsyncFunction(() => {}));
+  test.true(NewIs.functionOrAsyncFunction(async () => {}));
+
+  test.false(NewIs.functionOrAsyncFunction('() => {}'));
+  test.false(NewIs.functionOrAsyncFunction('async () => {}'));
 
 });
 //# sourceMappingURL=index.test.js.map
