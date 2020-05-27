@@ -1,12 +1,8 @@
 import Is from '@pwn/is';
 
-Is.use(utility => {
+import { Bundle } from './library/bundle.js';
 
-  utility.addPredicate('functionOrAsyncFunction', value => {
-    return typeof value === 'function';
-  });
-
-});
+Is.use(Bundle);
 
 export { Is };
 //# sourceMappingURL=index.js.map
