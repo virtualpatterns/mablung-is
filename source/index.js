@@ -1,11 +1,7 @@
 import Is from '@pwn/is'
 
-Is.use((utility) => {
- 
-  utility.addPredicate('functionOrAsyncFunction', (value) => {
-    return typeof value === 'function'
-  })
- 
-})
+import { Bundle } from './library/bundle.js'
+
+Is.use(Bundle)
 
 export { Is }
