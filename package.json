@@ -35,7 +35,8 @@
   },
   "scripts": {
     "upgrade:10": "npm-check-updates --upgrade",
-    "upgrade:20": "npm install",
+    "upgrade:20": "shx rm -f package-lock.json",
+    "upgrade:30": "npm install",
     "upgrade": "run-s --silent upgrade:*",
     "refresh:10": "shx rm -f package-lock.json",
     "refresh:20": "shx rm -Rf node_modules",
