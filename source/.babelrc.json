@@ -1,6 +1,6 @@
 {
-  "retainLines": true,
   "plugins": [],
   "presets": [],
+  "retainLines": true,
   "sourceType": "module"
 }
