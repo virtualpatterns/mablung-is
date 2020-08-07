@@ -13,12 +13,12 @@ Test('Is.functionOrAsyncFunction(value)', test => {
 
 });
 
+Test('Is.emptyArray(value)', test => {
+  test.true(Is.emptyArray([]));
+  test.false(Is.emptyArray([42]));
+});
+
 Test('Is.windows()', test => {
-
-  let isWindows = Is.windows();
-
-  test.log(`Is.windows() = ${Is.windows()}`);
-  test.is(isWindows, IsWindows());
-
+  test.is(Is.windows(), IsWindows());
 });
 //# sourceMappingURL=index.test.js.map
