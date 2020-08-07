@@ -1,7 +1,6 @@
 {
   "ignores": [
     "@babel/*",
-    "@virtualpatterns/mablung-babel-plugin-replace-identifier",
     "@virtualpatterns/mablung-source-map-support"
   ],
   "parsers": {
