@@ -4,4 +4,4 @@ import { Bundle } from './library/bundle.js'
 
 Is.use(Bundle)
 
-export { Is }
+export { Is, Bundle }
