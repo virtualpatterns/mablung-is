@@ -28,6 +28,7 @@
     "./package.json": "./package.json"
   },
   "license": "GPL-3.0+",
+  "main": "./distributable/index.js",
   "name": "@virtualpatterns/mablung-is",
   "repository": {
     "type": "git",
