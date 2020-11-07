@@ -1,6 +1,36 @@
 {
-  "plugins": [],
-  "presets": [],
-  "retainLines": true,
-  "sourceType": "module"
+  "env": {
+    "commonjs": {
+      "plugins": [
+        [
+          "@virtualpatterns/mablung-babel-plugin-replace-string-literal",
+          {
+            "rule": [
+              {
+                "searchFor": "^(\\.{1,2}\\/.*?)\\.js$",
+                "replaceWith": "$1.cjs"
+              }
+            ]
+          }      
+        ]
+      ],
+      "presets": [
+        [
+          "@babel/preset-env",
+          {
+            "targets": { 
+              "node": "current" 
+            } 
+          }
+        ]
+      ],
+      "sourceType": "module"
+    },
+    "esmodule": {
+      "plugins": [],
+      "presets": [],
+      "retainLines": true,
+      "sourceType": "module"
+    }
+  }
 }

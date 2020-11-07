@@ -1,3 +1,4 @@
+import IsNode from 'is-node'
 import IsWindows from 'is-windows'
 
 function Bundle(utility) {
@@ -13,7 +14,15 @@ function Bundle(utility) {
   utility.addPredicate('windows', () => {
     return IsWindows()
   })
- 
+  
+  utility.addPredicate('server', () => {
+    return IsNode
+  })
+  
+  utility.addPredicate('browser', () => {
+    return !IsNode
+  })
+
 }
 
 export { Bundle }

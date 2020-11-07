@@ -1,3 +1,4 @@
+import IsNode from 'is-node'
 import IsWindows from 'is-windows'
 import Test from 'ava'
 
@@ -20,4 +21,12 @@ Test('Is.emptyArray(value)', (test) => {
 
 Test('Is.windows()', (test) => {
   test.is(Is.windows(), IsWindows())
+})
+
+Test('Is.server()', (test) => {
+  test.is(Is.server(), IsNode)
+})
+
+Test('Is.browser()', (test) => {
+  test.is(Is.browser(), !IsNode)
 })
