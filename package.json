@@ -36,6 +36,13 @@
     },
     "./package.json": "./package.json"
   },
+  "files": [
+    "/include",
+    "/release/commonjs/library",
+    "/release/commonjs/index.cjs",
+    "/release/esmodule/library",
+    "/release/esmodule/index.js"
+  ],
   "license": "GPL-3.0+",
   "main": "./release/commonjs/index.js",
   "name": "@virtualpatterns/mablung-is",
@@ -54,9 +61,9 @@
     "@babel/eslint-parser": "^7.14.7",
     "@babel/preset-env": "^7.14.7",
     "@virtualpatterns/mablung-babel-plugin-replace-string-literal": "virtualpatterns/mablung-babel-plugin-replace-string-literal",
-    "@virtualpatterns/mablung-check-dependency": "virtualpatterns/mablung-check-dependency",
-    "@virtualpatterns/mablung-makefile-environment": "virtualpatterns/mablung-makefile-environment",
-    "@virtualpatterns/mablung-source-map-support": "virtualpatterns/mablung-source-map-support.git",
+    "@virtualpatterns/mablung-check-dependency": "0.0.1-45",
+    "@virtualpatterns/mablung-makefile-environment": "0.0.1-12",
+    "@virtualpatterns/mablung-source-map-support": "0.0.2-43",
     "ava": "^3.15.0",
     "c8": "^7.7.3",
     "eslint": "^7.29.0",
