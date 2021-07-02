@@ -37,7 +37,6 @@
     "./package.json": "./package.json"
   },
   "files": [
-    "/include",
     "/release/commonjs/library",
     "/release/commonjs/index.cjs",
     "/release/esmodule/library",
@@ -60,7 +59,7 @@
     "@babel/core": "^7.14.6",
     "@babel/eslint-parser": "^7.14.7",
     "@babel/preset-env": "^7.14.7",
-    "@virtualpatterns/mablung-babel-plugin-replace-string-literal": "virtualpatterns/mablung-babel-plugin-replace-string-literal",
+    "@virtualpatterns/mablung-babel-plugin-replace-string-literal": "0.0.1-13",
     "@virtualpatterns/mablung-check-dependency": "0.0.1-45",
     "@virtualpatterns/mablung-makefile-environment": "0.0.1-12",
     "@virtualpatterns/mablung-source-map-support": "0.0.2-43",
