@@ -1,1 +1,0 @@
-{"version":3,"sources":["../../source/esmodule/index.js"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;AAAA;;AAEA;;;;AAEA,YAAG,GAAH,CAAO,cAAP","file":"index.cjs","sourcesContent":["import Is from '@pwn/is'\n\nimport { Bundle } from './library/bundle.js'\n\nIs.use(Bundle)\n\nexport { Is, Bundle }"]}
