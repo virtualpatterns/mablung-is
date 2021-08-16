@@ -34,7 +34,8 @@
     "all": true,
     "exclude": [
       "release/commonjs/sandbox",
-      "release/esmodule/sandbox"
+      "release/esmodule/sandbox",
+      "release/header"
     ],
     "reporter": [
       "html"
