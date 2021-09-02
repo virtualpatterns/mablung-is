@@ -8,7 +8,7 @@ function Bundle(utility) {
   })
  
   utility.addPredicate('emptyArray', (value) => {
-    return Array.isArray(value) && value.length == 0
+    return Array.isArray(value) && value.length === 0
   })
  
   utility.addPredicate('windows', () => {
