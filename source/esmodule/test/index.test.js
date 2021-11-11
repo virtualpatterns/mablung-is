@@ -1,8 +1,7 @@
+import { Is } from '@virtualpatterns/mablung-is'
 import IsNode from 'is-node'
 import IsWindows from 'is-windows'
 import Test from 'ava'
-
-import { Is } from '../index.js'
 
 Test('Is.functionOrAsyncFunction(value)', (test) => {
 

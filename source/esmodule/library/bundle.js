@@ -1,27 +1,37 @@
 import IsNode from 'is-node'
 import IsWindows from 'is-windows'
 
-function Bundle(utility) {
+function Bundle(utility, Is) {
  
-  utility.addPredicate('functionOrAsyncFunction', (value) => {
-    return typeof value === 'function'
-  })
+  if (Is.not.propertyDefined(Is, 'functionOrAsyncFunction')) {
+    utility.addPredicate('functionOrAsyncFunction', (value) => {
+      return typeof value === 'function'
+    })
+  }
  
-  utility.addPredicate('emptyArray', (value) => {
-    return Array.isArray(value) && value.length === 0
-  })
- 
-  utility.addPredicate('windows', () => {
-    return IsWindows()
-  })
-  
-  utility.addPredicate('server', () => {
-    return IsNode
-  })
-  
-  utility.addPredicate('browser', () => {
-    return !IsNode
-  })
+  if (Is.not.propertyDefined(Is, 'emptyArray')) {
+    utility.addPredicate('emptyArray', (value) => {
+      return Array.isArray(value) && value.length === 0
+    })
+  }
+
+  if (Is.not.propertyDefined(Is, 'windows')) {
+    utility.addPredicate('windows', () => {
+      return IsWindows()
+    })
+  }
+
+  if (Is.not.propertyDefined(Is, 'server')) {
+    utility.addPredicate('server', () => {
+      return IsNode
+    })
+  }
+
+  if (Is.not.propertyDefined(Is, 'browser')) {
+    utility.addPredicate('browser', () => {
+      return !IsNode
+    })
+  }
 
 }
 
