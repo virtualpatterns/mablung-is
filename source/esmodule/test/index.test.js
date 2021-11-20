@@ -3,7 +3,7 @@ import IsNode from 'is-node'
 import IsWindows from 'is-windows'
 import Test from 'ava'
 
-Test('Is.functionOrAsyncFunction(value)', (test) => {
+Test('functionOrAsyncFunction(value)', (test) => {
 
   test.true(Is.functionOrAsyncFunction(() => {}))
   test.true(Is.functionOrAsyncFunction(async () => {}))
@@ -13,19 +13,19 @@ Test('Is.functionOrAsyncFunction(value)', (test) => {
 
 })
 
-Test('Is.emptyArray(value)', (test) => {
+Test('emptyArray(value)', (test) => {
   test.true(Is.emptyArray([]))
   test.false(Is.emptyArray([ 42 ]))
 })
 
-Test('Is.windows()', (test) => {
+Test('windows()', (test) => {
   test.is(Is.windows(), IsWindows())
 })
 
-Test('Is.server()', (test) => {
+Test('server()', (test) => {
   test.is(Is.server(), IsNode)
 })
 
-Test('Is.browser()', (test) => {
+Test('browser()', (test) => {
   test.is(Is.browser(), !IsNode)
 })
