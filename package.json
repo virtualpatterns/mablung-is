@@ -29,11 +29,10 @@
     "is-windows": "^1.0.2"
   },
   "devDependencies": {
-    "@virtualpatterns/babel-preset-mablung-makefile-environment": "0.0.26-13",
-    "@virtualpatterns/eslint-config-mablung-makefile-environment": "0.0.26-13",
-    "@virtualpatterns/mablung-check-dependency": "0.0.26-41",
-    "@virtualpatterns/mablung-makefile-environment": "0.0.26-35",
-    "@virtualpatterns/mablung-source-map-support": "0.0.26-46",
-    "ava": "^3.15.0"
+    "@virtualpatterns/babel-preset-mablung-makefile-environment": "0.0.26-23",
+    "@virtualpatterns/eslint-config-mablung-makefile-environment": "0.0.26-20",
+    "@virtualpatterns/mablung-check-dependency": "0.0.26-99",
+    "@virtualpatterns/mablung-makefile-environment": "0.0.26-66",
+    "ava": "^4.0.1"
   }
 }
